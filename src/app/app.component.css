@@ -1,0 +1,47 @@
+/* Barra superior */
+mat-toolbar {
+  display: flex;
+  justify-content: space-between; /* Distribuye el contenido en los extremos */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  padding: 0 16px; /* Añade un poco de espacio en los laterales */
+  height: 64px; /* Ajusta la altura de la barra */
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa el ancho total de la pantalla */
+  z-index: 1000; /* Asegura que la barra esté por encima del contenido */
+  background-color: #FF7300; /* Color de fondo naranja */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Espaciador dentro de las barras de herramientas */
+.mat-spacer {
+  flex-grow: 1; /* Expande el espacio restante */
+}
+
+/* Barra lateral (sidebar) */
+.sidebar {
+  display: flex;
+  flex-direction: column; /* Apila verticalmente el contenido */
+  width: 200px; /* Ajusta el ancho de la barra lateral */
+  height: 90vh; /* Ocupa toda la altura de la ventana */
+  position: fixed; /* Fija la barra lateral en el lado izquierdo */
+  top: 64px; /* Para que la barra lateral no se superponga a la barra superior */
+  left: 0;
+  z-index: 1000; /* Asegura que la barra lateral esté por encima del contenido */
+  background-color: #FF7300; /* Color de fondo naranja */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Asegurar que los textos dentro de los botones y enlaces sean blancos */
+::ng-deep .sidebar a, ::ng-deep .sidebar h1, ::ng-deep .sidebar app-language-switcher {
+  color: white !important; /* Forzar el color blanco para los enlaces, títulos y componentes personalizados */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Contenido principal */
+router-outlet {
+  margin-left: 200px; /* Deja espacio para la barra lateral */
+  margin-top: 64px; /* Deja espacio para la barra superior */
+  padding: 16px; /* Añade espacio interior al contenido */
+}
