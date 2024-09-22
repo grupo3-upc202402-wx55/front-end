@@ -40,7 +40,8 @@ import {StockAddAndEditComponent} from "../../../re-grill/components/stock-add-a
     MatPaginator,
     MatIconButton,
     StockAddAndEditComponent,
-    MatButton
+    MatButton,
+    OrderAddModifyDeleteComponent
   ],
   templateUrl: './order-management.component.html',
   styleUrl: './order-management.component.css'

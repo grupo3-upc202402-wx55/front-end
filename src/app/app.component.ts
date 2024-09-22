@@ -14,8 +14,8 @@ import {MatAnchor} from "@angular/material/button";
 export class AppComponent {
   title = 'learning-center';
   protected options = [
-    { path: '/stock', title: 'Inventory'},
-    { path: '/order', title: 'Orders'},
+    { path: '/stock', title: 'Inventory Manegement'},
+    { path: '/order', title: 'Orders and Table'},
     { path: '/Billing', title: 'Billing'},
     { path: '/Orders ', title: 'Orders and Table'},
     { path: '/Report', title: 'Report and Statistics'},
