@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'learning-center';
   protected options = [
     { path: '/stock', title: 'Inventory Manegement'},
-    { path: '/about', title: 'Shrinkage Control'},
+    { path: '/order', title: 'Shrinkage Control'},
     { path: '/Billing', title: 'Billing'},
     { path: '/Orders ', title: 'Orders and Table'},
     { path: '/Report', title: 'Report and Statistics'},

@@ -1,11 +1,25 @@
 {
+  "order": [
+    {
+      "id": 1,
+      "table": 1,
+      "client": "John Doe",
+      "time": "12:00",
+      "status": "In preparation"
+    },
+    {
+      "id": 2,
+      "table": "1",
+      "client": "Andy Polo",
+      "time": "2024-09-22T18:17:42.634Z",
+      "status": "In progress"
+    }
+  ],
   "stock": [
     {
       "id": 1,
       "ingredient": "Rice",
       "quantity": "300g "
     }
-
-
   ]
 }

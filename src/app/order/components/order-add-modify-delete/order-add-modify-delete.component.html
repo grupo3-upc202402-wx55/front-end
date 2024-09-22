@@ -1,0 +1,23 @@
+<div class ="form-section ">
+  <form #orderForm="ngForm" (ngSubmit)="onSubmit()" class="form-row">
+
+    <mat-form-field id="description-form-field" class="long-text-field">
+      <input [(ngModel)]="order.table"  matInput placeholder="Table" name="table" required>
+    </mat-form-field>
+    <mat-form-field id="client-form-field" class="short-text-field">
+      <input [(ngModel)]="order.client" matInput placeholder="Client" name="client" required>
+    </mat-form-field>
+    <mat-form-field id="time-form-field" class="short-text-field">
+      <input [(ngModel)]="order.time" matInput placeholder="Time" name="time" required>
+    </mat-form-field>
+    <mat-form-field id="status-form-field" class="short-text-field">
+      <input [(ngModel)]="order.status" matInput placeholder="Status" name="status" required>
+    </mat-form-field>
+<ng-container>
+  <button color="primary" mat-raised-button>{{ isEditMode() ? 'Update' : 'Add'}}</button>
+  <button (click)="onCancel()" color="warn" mat-raised-button>Cancel</button>
+</ng-container>
+
+
+  </form>
+</div>
