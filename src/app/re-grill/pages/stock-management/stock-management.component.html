@@ -1,0 +1,51 @@
+<div class="table-wrapper style" style="margin-top: 50px;">
+  <h1>Stock</h1>
+
+  <app-stock-add-and-edit
+    [stock]="stockData"
+    [editMode]="editMode"
+    (cancelRequested)="onCancelRequested()"
+    (stockAddRequested)="onStockAddRequested($event)"
+    (stockUpdateRequested)="onCourseUpdateRequested($event)"/>
+
+  <!-- Data Table -->
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <!-- ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID">ID</th>
+      <td mat-cell *matCellDef="let stock">{{ stock.id }}</td>
+    </ng-container>
+
+    <!-- Ingredient Column -->
+    <ng-container matColumnDef="ingredient">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Ingredient">Ingredient</th>
+      <td mat-cell *matCellDef="let stock">{{ stock.ingredient }}</td>
+    </ng-container>
+
+    <!-- Quantity Column -->
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Quantity">Quantity</th>
+      <td mat-cell *matCellDef="let stock">{{ stock.quantity }}</td>
+    </ng-container>
+
+    <!-- Actions Column -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let stock">
+        <button mat-icon-button (click)="onEditItem(stock)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="onDeleteItem(stock.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Header and Row Declarations -->
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+
+  <!-- Paginator -->
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]" [pageSize]="5" showFirstLastButtons></mat-paginator>
+</div>
