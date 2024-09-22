@@ -4,10 +4,10 @@
   <form #stockForm="ngForm" (submit)="onSubmit()" class="form-row">
 
     <mat-form-field id="description-form-field" class="long-text-field">
-      <input [(ngModel)]="stock.ingredient" matInput name="description" placeholder="Description" required>
+      <input [(ngModel)]="stock.ingredient" matInput name="ingredient" placeholder="Ingredient" required>
     </mat-form-field>
     <mat-form-field id="price-form-field" class="short-text-field">
-      <input [(ngModel)]="stock.quantity" matInput name="price" placeholder="Price" required>
+      <input [(ngModel)]="stock.quantity" matInput name="quantity" placeholder="Quantity" required>
     </mat-form-field>
 
     <ng-container>

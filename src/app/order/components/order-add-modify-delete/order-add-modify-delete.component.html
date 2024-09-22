@@ -10,9 +10,14 @@
     <mat-form-field id="time-form-field" class="short-text-field">
       <input [(ngModel)]="order.time" matInput placeholder="Time" name="time" required>
     </mat-form-field>
+
     <mat-form-field id="status-form-field" class="short-text-field">
-      <input [(ngModel)]="order.status" matInput placeholder="Status" name="status" required>
+      <mat-select [(ngModel)]="order.status" name="status" placeholder="Status" required>
+        <mat-option value="IN PROGRESS">IN PROGRESS</mat-option>
+        <mat-option value="READY">READY</mat-option>
+      </mat-select>
     </mat-form-field>
+
 <ng-container>
   <button color="primary" mat-raised-button>{{ isEditMode() ? 'Update' : 'Add'}}</button>
   <button (click)="onCancel()" color="warn" mat-raised-button>Cancel</button>

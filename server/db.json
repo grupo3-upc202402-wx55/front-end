@@ -13,6 +13,13 @@
       "client": "Andy Polo",
       "time": "2024-09-22T18:17:42.634Z",
       "status": "In progress"
+    },
+    {
+      "id": 3,
+      "table": "1",
+      "client": "Andy Polo",
+      "time": "2024-09-22T18:57:01.780Z",
+      "status": "READY"
     }
   ],
   "stock": [
