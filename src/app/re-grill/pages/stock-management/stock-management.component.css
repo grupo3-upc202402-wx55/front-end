@@ -1,10 +1,13 @@
+
+
 .table-wrapper {
   width: 1024px;
-  margin-left: 200px; /* Deja espacio para la barra lateral */
+  margin-left: 300px; /* Deja espacio para la barra lateral */
 }
 
 table {
   width: 100%;
+
 }
 
 tr.editable-row {

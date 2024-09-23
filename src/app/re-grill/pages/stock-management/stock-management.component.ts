@@ -124,9 +124,9 @@ private createStock(){
 
   }
 
-  private deleteStock(id: number) {
-    this.stockService.delete(id).subscribe(() => {
-        this.dataSource.data = this.dataSource.data.filter((stock: Stock) => stock.id !== id);
+   deleteStock(id: number) {
+    this.stockService.delete(id).subscribe((response: any  ) => {
+      console.log(response);
       });
 
   }
