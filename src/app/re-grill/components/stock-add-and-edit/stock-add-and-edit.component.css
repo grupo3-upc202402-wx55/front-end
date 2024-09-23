@@ -1,38 +1,15 @@
-.form-section {
-  display: flex;
-  height: 90%;
 
+
+.table-wrapper {
+  width: 1024px;
+  margin-left: 300px; /* Deja espacio para la barra lateral */
 }
-.short-text-field{
+
+table {
   width: 100%;
-  margin-left: 100px; /* Deja espacio para la barra lateral */
 
 }
 
-.long-text-field {
-  width: 100%;
-  margin-left: 100px; /* Deja espacio para la barra lateral */
-
-
-}
-
-.form-row {
-  display: table-cell;
-  max-width: 2400px;
-  margin-left: 100px; /* Deja espacio para la barra lateral */
-}
-
-.form-row .mat-raised-button {
-  margin-right: 8px;
-}
-
-.form-row .mat-form-field {
-  margin-right: 8px;
-}
-
-.short-text-field {
-  min-width: 250px;
-}
-.long-text-field {
-  min-width: 600px;
+tr.editable-row {
+  background-color: lightblue;
 }

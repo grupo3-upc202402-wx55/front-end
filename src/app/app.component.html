@@ -13,8 +13,10 @@
 <mat-toolbar class="sidebar" color="primary">
 
   <div class="mat-spacer"></div>
-  @for (option of options; track option.title) {
-    <a mat-button [routerLink]="option.path">{{ option.title }}</a>
-  }
+  <button mat-button routerLink="/stock">Stock Management</button>
+  <button mat-button routerLink="/recipe">Recipe</button>
+  <button mat-button routerLink="/order">Order</button>
+  <button mat-button routerLink="/customer">Customer</button>
+
 </mat-toolbar>
 <router-outlet/>
