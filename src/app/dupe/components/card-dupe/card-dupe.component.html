@@ -1,0 +1,12 @@
+<mat-card class="w-96" appearance="outlined">
+  <img mat-card-image src="/assets/img/dupe.png" alt="Image of a Dupe">
+  <mat-card-content>
+    <h3>Table: {{ dupe.table }}</h3>
+    <p *ngFor="let dish of dupe.dishes">Dish: {{ dish.name }} - Cost: {{ dish.cost }}</p>
+  </mat-card-content>
+  <mat-card-actions class="gap-2.5 m-3">
+    <button class="w-20 !bg-green-600 !text-white !rounded" mat-button (click)="openModal()">Edit</button>
+    <button class="w-20 !bg-green-600 !text-white !rounded" mat-button (click)="onDupeDeleted(dupe.id)">Delete</button>
+  </mat-card-actions>
+</mat-card>
+
