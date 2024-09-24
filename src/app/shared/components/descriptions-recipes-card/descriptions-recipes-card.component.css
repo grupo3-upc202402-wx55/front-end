@@ -8,6 +8,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 300px;
+  margin-left: 300px; /* Deja espacio para la barra lateral */
+
 }
 
 .full-page-app {
@@ -16,21 +18,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 100px; /* Deja espacio para la barra lateral */
+
 }
 
 .title-description {
   margin-top: 50px;
-  font-size: 7em;
+  font-size: 4em;
   text-align: center;
   color: darkgreen;
+
 }
 
 .container {
-  width: 100%;
+  width: 60%;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+
 }
 
 .card {
@@ -73,14 +79,14 @@ body {
 .card h2 {
   color: #276749;
   margin: 10px 0;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 
 
 .card p {
   color: gray;
-  font-size: 22px;
+  font-size: 15px;
   margin-bottom: 25px;
 }
 
