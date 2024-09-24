@@ -56,7 +56,9 @@ export class RecipeService {
     this.recipesSubject.next([...this.recipes, ...this.userRecipe]);
   }
 
-
+  getUserRecipes(userRole: string) {
+    return of(this.userRecipe);
+  }
 
   getRecipes() {
     return this.recipesSubject.asObservable();
