@@ -1,0 +1,26 @@
+
+
+<!-- Contenido para 'undefined' -->
+<div *ngIf="!currentProfile || !currentProfile.role">
+  <h2 class="title-description">About recipe & Description</h2>
+
+      <div class="container" *ngIf="recipe">
+        <mat-card class="card">
+          <div class="card-content">
+            <div class="image-section">
+              <div *ngFor="let image of recipe.images">
+                <img mat-card-image [src]="image" alt="Recipe image" class="recipe-image">
+              </div>
+            </div>
+            <div class="info-section">
+              <h2>Name:  {{ recipe.name }}</h2>
+              <p>Price: {{ recipe.price }}</p>
+              <p>Type of recipe: {{ recipe.type }}</p>
+
+
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+

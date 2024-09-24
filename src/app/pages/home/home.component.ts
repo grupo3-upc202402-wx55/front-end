@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
   }
 
   navigateToDescriptionsUndefined(id: string): void {
-    if (id === 'recipe3' || id === 'recipe4' || id === 'recipe5') {
+    if (id === 'recipe6' || id === 'recipe7' || id === 'recipe8') {
       alert('If you want to enjoy all the content, you need to register or log in');
       this.router.navigate(['/login']);
     } else if (id) {
