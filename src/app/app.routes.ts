@@ -3,9 +3,11 @@ import {StockManagementComponent} from "./re-grill/pages/stock-management/stock-
 import {OrderManagementComponent} from "./order/pages/order-management/order-management.component";
 import { HomeComponent} from "./pages/home/home.component";
 import {RecipeComponent} from "./public/pages/recipe/recipe.component";
+import {DupesManagementComponent} from "./dupe/pages/dupes-management/dupes-management.component";
 export const routes: Routes = [
   { path: 'stock', component: StockManagementComponent},
   { path : 'order', component: OrderManagementComponent},
   { path: 'recipe', component: RecipeComponent },
-  {path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path:'dupes', component: DupesManagementComponent}
 ];

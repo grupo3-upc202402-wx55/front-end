@@ -19,7 +19,8 @@ export class AppComponent {
     { path: '/home', title: 'Home'},
     { path: '/Orders ', title: 'Orders and Table'},
     { path: '/Report', title: 'Report and Statistics'},
-    { path: '/Profile', title: 'Profile'}
+    { path: '/Profile', title: 'Profile'},
+    {path: '/dupes', title: 'Dupes Management' }
 
   ]
 }
