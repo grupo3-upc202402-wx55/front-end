@@ -52,5 +52,21 @@
       "ingredient": "Carne",
       "quantity": "4k"
     }
+  ],
+  "dupe": [
+    {
+      "id": 1,
+      "table": 1,
+      "dishes": [
+        {
+          "name": "Pizza",
+          "cost": 15.00
+        },
+        {
+          "name": "Pasta",
+          "cost": 12.00
+        }
+      ]
+    }
   ]
 }
