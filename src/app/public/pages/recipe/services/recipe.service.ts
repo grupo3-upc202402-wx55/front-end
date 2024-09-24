@@ -9,83 +9,40 @@ export class RecipeService {
   private recipes: any[] = [
     {
       id: 'recipe1',
-      name: 'Los Alamos recipe',
-      ubication: 'Asia',
-      product: 'Chicken',
-      totalSurface: 150,
+      name: 'Pulpo a la gallega',
       price: 7500,
       images: ["/assets/recipe-1.png"],
-      highlight1: 'Ecological recipe',
-      highlight2: 'High production',
-      highlight3: 'ISO certification',
-      infrastructure: 'Modern facilities',
-      recipeType: 'Poultry',
-      service: 'Chicken sales',
-      certifications: 'ISO 9001'
+      type: "main course"
+
     },
     {
       id: 'recipe2',
-      name: 'El Sol recipe',
-      ubication: 'Arequipa',
-      product: 'Cattle',
-      totalSurface: 300,
-      price: 12000,
+      name: 'Ceviche',
+      price: 8000,
       images: ["/assets/recipe-2.png"],
-      highlight1: 'High quality livestock',
-      highlight2: 'Innovative breeding techniques',
-      highlight3: 'Organic certification',
-      infrastructure: 'Wide pastures',
-      recipeType: 'Livestock',
-      service: 'Beef sales',
-      certifications: 'Organic certification'
+      type: "main course"
     },
     {
       id: 'recipe3',
-      name: 'Green Valley recipe',
-      ubication: 'Cusco',
-      product: 'Sheep',
-      totalSurface: 200,
-      price: 8000,
+      name: 'Lomo saltado',
+      price: 9000,
       images: ["/assets/recipe-3.png"],
-      highlight1: 'Free range sheep',
-      highlight2: 'Sustainable practices',
-      highlight3: 'Wool production',
-      infrastructure: 'Natural grazing lands',
-      recipeType: 'Sheep',
-      service: 'Wool and mutton sales',
-      certifications: 'Sustainable recipeing certification'
+      type: "main course"
     },
     {
       id: 'recipe4',
-      name: 'Blue Mountain recipe',
-      ubication: 'Cusco',
-      product: 'Alpaca',
-      totalSurface: 250,
-      price: 10000,
+      name: 'Arroz con pollo',
+      price: 8500,
       images: ["/assets/recipe-4.png"],
-      highlight1: 'Alpaca breeding',
-      highlight2: 'High altitude recipeing',
-      highlight3: 'Alpaca wool production',
-      infrastructure: 'High altitude pastures',
-      recipeType: 'Alpaca',
-      service: 'Alpaca wool sales',
-      certifications: 'High altitude recipeing certification'
+      type: "main course"
     },
     {
       id: 'recipe5',
       name: 'River Side recipe',
-      ubication: 'Ica',
-      product: 'Pigs',
-      totalSurface: 180,
-      price: 7000,
+      price: 10000,
       images: ["/assets/recipe-5.png"],
-      highlight1: 'Pig recipeing',
-      highlight2: 'River side location',
-      highlight3: 'Pork production',
-      infrastructure: 'Modern pig pens',
-      recipeType: 'Pig',
-      service: 'Pork sales',
-      certifications: 'Pig recipeing certification'
+      type: "main course"
+
     }
 
   ];
@@ -99,9 +56,7 @@ export class RecipeService {
     this.recipesSubject.next([...this.recipes, ...this.userRecipe]);
   }
 
-  getUserRecipes(userRole: string) {
-    return of(this.userRecipe);
-  }
+
 
   getRecipes() {
     return this.recipesSubject.asObservable();
