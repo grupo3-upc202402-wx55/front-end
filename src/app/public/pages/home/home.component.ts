@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {RecipeService} from "../../public/pages/recipe/services/recipe.service";
+
 import { Router } from '@angular/router';
 import {MatCard, MatCardImage} from "@angular/material/card";
 import {NgForOf, NgIf} from "@angular/common";
+import {RecipeService} from "../../../recipe/services/recipe.service";
 
 @Component({
   selector: 'app-home',

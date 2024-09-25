@@ -1,8 +1,8 @@
 import { Component, } from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {RecipeService} from "../../../public/pages/recipe/services/recipe.service";
 import {MatCard, MatCardContent, MatCardImage} from "@angular/material/card";
 import {NgForOf, NgIf} from "@angular/common";
+import {RecipeService} from "../../../recipe/services/recipe.service";
 
 
 @Component({

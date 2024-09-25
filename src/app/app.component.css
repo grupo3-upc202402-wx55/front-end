@@ -17,6 +17,7 @@ mat-toolbar {
 /* Espaciador dentro de las barras de herramientas */
 .mat-spacer {
   flex-grow: 1; /* Expande el espacio restante */
+/* Cambia el color del texto a blanco */
 }
 
 /* Barra lateral (sidebar) */

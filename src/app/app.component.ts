@@ -16,10 +16,8 @@ export class AppComponent {
   protected options = [
     { path: '/stock', title: 'Inventory Manegement'},
     { path: '/order', title: 'Orders and Table'},
-    { path: '/home', title: 'Home'},
-    { path: '/Orders ', title: 'Orders and Table'},
-    { path: '/Report', title: 'Report and Statistics'},
-    { path: '/Profile', title: 'Profile'}
+    { path: '/home', title: 'Shrinkage Control'}
+
 
   ]
 }

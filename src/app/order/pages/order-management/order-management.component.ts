@@ -15,7 +15,7 @@ import {OrderAddModifyDeleteComponent} from "../../components/order-add-modify-d
 import {MatIcon} from "@angular/material/icon";
 import {NgClass} from "@angular/common";
 import {MatButton, MatIconButton} from "@angular/material/button";
-import {StockAddAndEditComponent} from "../../../re-grill/components/stock-add-and-edit/stock-add-and-edit.component";
+import {StockAddAndEditComponent} from "../../../inventory/components/stock-add-and-edit/stock-add-and-edit.component";
 
 
 @Component({

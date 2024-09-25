@@ -1,18 +1,11 @@
 {
   "order": [
     {
-      "id": 1,
-      "table": 1,
-      "client": "John Doe",
-      "time": "12:00",
-      "status": "In preparation"
-    },
-    {
       "id": 2,
       "table": "1",
-      "client": "Andy Polo",
+      "client": "Edison Flores",
       "time": "2024-09-22T18:17:42.634Z",
-      "status": "In progress"
+      "status": "IN PROGRESS"
     },
     {
       "id": 3,
@@ -20,37 +13,210 @@
       "client": "Andy Polo",
       "time": "2024-09-22T18:57:01.780Z",
       "status": "READY"
-    },
-    {
-      "id": 4,
-      "table": "da",
-      "client": "dad",
-      "time": "2024-09-23T18:28:36.040Z",
-      "status": "READY"
-    },
-    {
-      "id": 5,
-      "table": "2",
-      "client": "adad",
-      "time": "Mon Sep 23 2024 1a4:09:35 GMT-0500 (hora estándar de Perú)",
-      "status": "READY"
     }
   ],
   "stock": [
+
+    {
+      "id": 1,
+      "ingredient": "Rice",
+      "quantity": "25kg"
+    },
     {
       "id": 2,
-      "ingredient": "ada",
-      "quantity": "13"
+      "ingredient": "Meat",
+      "quantity": "10kg"
     },
     {
       "id": 3,
-      "ingredient": "ada",
-      "quantity": "12"
+      "ingredient": "Potatoes",
+      "quantity": "5kg"
     },
     {
       "id": 4,
-      "ingredient": "Carne",
-      "quantity": "4k"
+      "ingredient": "Tomatoes",
+      "quantity": "5kg"
+    },
+    {
+      "id": 5,
+      "ingredient": "Onions",
+      "quantity": "5kg"
+    },
+    {
+      "id": 6,
+      "ingredient": "Garlic",
+      "quantity": "5kg"
+    },
+    {
+      "id": 7,
+      "ingredient": "Pasta",
+      "quantity": "5kg"
+    },
+    {
+      "id": 8,
+      "ingredient": "Oil",
+      "quantity": "5L"
+    },
+    {
+      "id": 9,
+      "ingredient": "Salt",
+      "quantity": "1kg"
+    },
+    {
+      "id": 10,
+      "ingredient": "Pepper",
+      "quantity": "1kg"
+    },
+    {
+      "id": 11,
+      "ingredient": "Sugar",
+      "quantity": "1kg"
+    },
+    {
+      "id": 12,
+      "ingredient": "Milk",
+      "quantity": "5L"
+    },
+    {
+      "id": 13,
+      "ingredient": "Eggs",
+      "quantity": "1dozen"
+    },
+    {
+      "id": 14,
+      "ingredient": "Butter",
+      "quantity": "1kg"
+    },
+    {
+      "id": 15,
+      "ingredient": "Cheese",
+      "quantity": "1kg"
+    },
+    {
+      "id": 16,
+      "ingredient": "Bread",
+      "quantity": "1loaf"
+    },
+    {
+      "id": 17,
+      "ingredient": "Chicken",
+      "quantity": "5kg"
+    },
+    {
+      "id": 18,
+      "ingredient": "Fish",
+      "quantity": "5kg"
+    },
+    {
+      "id": 19,
+      "ingredient": "Pork",
+      "quantity": "5kg"
+    },
+    {
+      "id": 20,
+      "ingredient": "Beef",
+      "quantity": "5kg"
+    },
+    {
+      "id": 21,
+      "ingredient": "Lamb",
+      "quantity": "5kg"
+    },
+    {
+      "id": 22,
+      "ingredient": "Vegetables",
+      "quantity": "5kg"
+    },
+    {
+      "id": 23,
+      "ingredient": "Fruits",
+      "quantity": "5kg"
+    },
+    {
+      "id": 24,
+      "ingredient": "Desserts",
+      "quantity": "5kg"
+    },
+    {
+      "id": 25,
+      "ingredient": "Drinks",
+      "quantity": "5L"
+    },
+    {
+      "id": 26,
+      "ingredient": "Snacks",
+      "quantity": "5kg"
+    },
+    {
+      "id": 27,
+      "ingredient": "Sauces",
+      "quantity": "5kg"
+    },
+    {
+      "id": 28,
+      "ingredient": "Spices",
+      "quantity": "1kg"
+    },
+    {
+      "id": 29,
+      "ingredient": "Herbs",
+      "quantity": "1kg"
+    },
+    {
+      "id": 30,
+      "ingredient": "Baking",
+      "quantity": "1kg"
+    },
+    {
+      "id": 31,
+      "ingredient": "Canned",
+      "quantity": "5kg"
+    },
+    {
+      "id": 32,
+      "ingredient": "Frozen",
+      "quantity": "5kg"
+    },
+    {
+      "id": 33,
+      "ingredient": "Dairy",
+      "quantity": "5L"
+    },
+    {
+      "id": 34,
+      "ingredient": "Beverages",
+      "quantity": "5L"
+    },
+    {
+      "id": 35,
+      "ingredient": "Alcohol",
+      "quantity": "5L"
+    },
+    {
+      "id": 36,
+      "ingredient": "Tobacco",
+      "quantity": "5kg"
+    },
+    {
+      "id": 37,
+      "ingredient": "Cleaning",
+      "quantity": "5L"
+    },
+    {
+      "id": 38,
+      "ingredient": "Hygiene",
+      "quantity": "5L"
+    },
+    {
+      "id": 39,
+      "ingredient": "Paper",
+      "quantity": "5kg"
+    },
+    {
+      "id": 40,
+      " ingredient": "Plastic",
+      "quantity": "5kg"
     }
+
   ]
 }

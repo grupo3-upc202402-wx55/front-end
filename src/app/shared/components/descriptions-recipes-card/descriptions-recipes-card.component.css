@@ -2,6 +2,7 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   font-family: Arial, sans-serif;
+
 }
 
 .container-app {
@@ -10,15 +11,17 @@ body {
   margin-top: 300px;
   margin-left: 300px; /* Deja espacio para la barra lateral */
 
+
 }
 
 .full-page-app {
   width: 100%;
   max-width: 1200px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 100px; /* Deja espacio para la barra lateral */
+  margin-left: 300px; /* Deja espacio para la barra lateral */
 
 }
 
@@ -36,6 +39,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  margin-left: 300px; /* Deja espacio para la barra lateral */
 
 }
 
